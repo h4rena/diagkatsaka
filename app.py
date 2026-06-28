@@ -154,7 +154,7 @@ with st.sidebar:
         "Les pustules orangées apparaissent sur la face inférieure des feuilles."
     )
     st.markdown("---")
-    if st.button("🗑️ Vider l'historique", use_container_width=True):
+    if st.button("🗑️ Vider l'historique", width='stretch'):
         st.session_state.historique = []
         # Nettoyer le dossier uploads
         for f in os.listdir(DOSSIER_UPLOADS):
@@ -195,7 +195,7 @@ with tab_analyse:
         with col_img:
             st.markdown("**Image analysée**")
             img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
-            st.image(img_rgb, use_container_width=True, caption=fichier.name)
+            st.image(img_rgb, width='stretch', caption=fichier.name)
 
         with col_res:
             st.markdown("**Extraction des caractéristiques**")
@@ -326,7 +326,7 @@ with tab_historique:
                     # Charger et afficher la miniature
                     if os.path.exists(h['chemin']):
                         img = Image.open(h['chemin'])
-                        col.image(img, use_container_width=True)
+                        col.image(img, width='stretch')
                     else:
                         col.markdown("*(image manquante)*")
 

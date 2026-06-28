@@ -1,4 +1,4 @@
-# DiagMaïs — Détection de la Rouille Polysora sur Feuilles de Maïs
+# DiagKatsaka — Détection de la Rouille Polysora sur Feuilles de Maïs
 
 Système d'aide au diagnostic pour techniciens agricoles à Madagascar.
 Classifie les feuilles de maïs en **Saine (0)** ou **Malade (1)** à partir de photos.
@@ -382,7 +382,7 @@ L'application est accessible à l'adresse : `http://localhost:8501`
 
 ### Capture d'écran
 
-*[L'interface affiche un en-tête vert "DiagMaïs", une zone d'upload,
+*[L'interface affiche un en-tête vert "DiagKatsaka", une zone d'upload,
 une zone de résultat colorée, et une galerie d'historique en bas.]*
 
 ---
